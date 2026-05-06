@@ -1,1 +1,47 @@
-.container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background-color: #f0f0f0; } .button { padding: 10px 20px; border: none; border-radius: 5px; background-color: #007bff; color: white; cursor: pointer; transition: background-color 0.3s; } .button:hover { background-color: #0056b3; } .text-input { padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; max-width: 300px; } .text-input:focus { border-color: #007bff; outline: none; } .card { background-color: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 20px; margin: 20px; } .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; } .hidden { display: none; } .visible { display: block; } .alert { padding: 15px; border-radius: 5px; margin-bottom: 20px; } .alert-success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; } .alert-danger { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; } .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #343a40; padding: 10px 20px; } .navbar a { color: white; text-decoration: none; margin: 0 10px; } .footer { text-align: center; padding: 20px; background-color: #343a40; color: white; } .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-top: 4px solid #ffffff; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } .badge { padding: 5px 10px; border-radius: 12px; background-color: #007bff; color: white; } .tooltip { position: relative; display: inline-block; } .tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: black; color: white; text-align: center; border-radius: 6px; padding: 5px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; transition: opacity 0.3s; } .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Styling for a card component */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Heading inside the card */
+.card h2 {
+  color: #333;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Paragraph text inside the card */
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.btn:hover {
+  background-color: #0056b3;
+}
